@@ -1,0 +1,33 @@
+extends layout
+
+block content	
+	article
+		section.welcome
+			h1 Welcome
+			p Please enter your credentials to access this page.
+		section.login
+			h2 Admin Login
+			h4
+			form(role='form', action="/login", method="post", class='form-horizontal')
+				#message
+					if message
+						h4(class='text-center text-danger') #{message}
+				div(class='form-group')
+					div(class='col-lg-12')
+						input(type='text', name='username', class='form-control', required, placeholder='Enter Username')
+				br
+				div(class='form-group')
+					div(class='col-lg-12')
+						input(type='password', name='password', class='form-control', required, placeholder='Password')
+				div(class='form-group')
+					div(class='col-lg-12')
+						input(type='checkbox') 
+						label
+							small Remember me
+						&nbsp;
+						small
+							a(href='', title='Password Retieve page', class='right') Forget Password?
+					div(class='form-group')
+						div(class='col-lg-12')
+							br
+							button(type='submit', class='btn btn-primary btn-lg btn-block') Login

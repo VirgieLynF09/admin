@@ -1,0 +1,52 @@
+extends layout
+
+block content				
+	article
+		nav
+			ul.right
+				li
+					a(href='/', title='Home') Home
+				li
+					a(href='/home', title='Data Collection Lists') Data Collection Lists
+				li 
+					a(href='/home/add', title='Add New Data') Add New Data
+
+				li 
+					a(href='/login', title='Login') Login
+
+				li
+					a(href='/signout', title='Logout') Logout
+		section(class='row')
+			h1 Electric Vehicle Data Collection
+			table
+				thead
+					th Vehicle License Plate
+					th Vehicle Manufacture
+					th Vehicle Model
+					th Vehicle Year
+					th Are you
+					th Postal Code
+					th Approximate KM Since Last Charge
+					th Charger Station
+					th Estimated Duration of Stay
+					th Date
+					th Edit
+					th Delete
+				tbody
+					each car, i in home
+						tr
+						td #{car.plateNumber}
+						td #{car.manufacture}
+						td #{car.model}
+						td #{car.year}
+						td #{car.category}
+						td #{car.postalCode}
+						td #{car.approximateKm}
+						td #{car.chargerStation}
+						td #{car.duration}
+						td #{car.chargeDate}
+						td
+							a(class='btn btn-primary btn-xs',href='home/edit/#{car._id}' title='Edit') Edit
+						td
+							a(class='btn btn-default btn-xs', href='home/delete/#{car._id}' title='Delete' onclick='return confirm(\'Are you sure you want to delete this car?\');') Delete
+		

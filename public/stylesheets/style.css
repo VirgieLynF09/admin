@@ -1,0 +1,126 @@
+body {
+	font-family: "Avenir", sans-serif;
+	background: #004b87;
+	border-top: 20px solid #64a70b;
+	color: #fff;
+	margin: auto;
+
+}
+
+header {
+	padding: 20px 50px;
+}
+/*welcome message*/
+.welcome, h1 {
+	text-align: center;
+
+}
+/*login form*/
+.login {
+	background: #fff;
+	color: #004b87;
+	padding: 20px;
+}
+button {
+	border: 0;
+	border-radius: 5px;
+	background: #004b87;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+button.account {
+	border: 0;
+	border-radius: 5px;
+	background: #64a70b;
+	padding: 10px;
+	text-align: center;
+}
+button a {
+	color: #fff;
+	text-decoration: none;
+}
+.login .right {
+	text-decoration: none;
+	color: #004b87;
+	padding-left: 82px;
+}
+/*message page*/
+a.data {
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+}
+h4 {
+	text-align: center;
+	font-size: 50px;
+}
+/*index page*/
+.home {
+	background-color: #fff;
+	color: #004b87;
+	padding: 20px;
+	margin: auto;
+}
+.home h1 {
+	text-align: center;
+}
+nav {
+	background: #64a70b;
+	padding: 2px;
+}
+
+/*home page table*/
+.row {
+	background: #fff;
+	color: #004b87;
+}
+table, td {
+	border: 1px solid #004b87;
+	border-collapse: collapse;
+}
+
+thead th {
+	border: 1px solid #fff;
+	background: #004b87;
+	color: #fff;
+	text-align: center;
+	padding: 2px;
+}
+td {
+	color: #004b87;
+	text-align: center;
+	padding: 10px;
+}
+a.btn-xs {
+	color: #004b87;
+	text-decoration: none;
+	text-align: center;
+}
+
+/*footer*/
+.logo {
+	background: #c4bfb6;
+	border-top: 20px solid #64a70b;
+/*	margin-top: 400px;*/
+	padding: 10px;
+	text-align: center;
+}
+.logo p {
+	display: inline;
+	padding: 5px;
+}
+.link {
+	background: #333f48;
+	padding: 2px;
+	text-align: center;
+}
+ul li {
+	display: inline;
+	padding: 10px;
+}
+ul li a {
+	color: #fff;
+	text-decoration: none;
+
+}

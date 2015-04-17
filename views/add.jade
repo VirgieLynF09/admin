@@ -1,0 +1,67 @@
+extends layout
+
+block content
+	header
+			nav
+				ul.right
+					li
+						a(href='/', title='Home') Home
+					li
+						a(href='/home', title='Data Collection Lists') Data Collection Lists
+
+					li 
+						a(href='/home/add', title='Add New Data') Add New Data
+					li
+						a(href='/login', title='Login') Login
+
+					li
+						a(href='/signout', title='Logout') Logout
+	article(class='container')
+		h1 Add Data
+		section
+			form(method='post', action='/home/add', class='form-horizontal')
+				fieldset
+					legend Dealership Info
+					div(class='form-group')
+						label( class='col-lg-2 control-label') Vehicle License Plate #
+						div(class='col-lg-10')
+							input(name='plateNumber', required, class='form-control', placeholder='License Plate #')
+					div(class='form-group')
+						label(class='col-lg-2 control-label') Vehicle Manufacture
+						div(class='col-lg-10')
+							input(name='manufacture', required, class='form-control', placeholder='Manufacture')
+					div(class='form-group')
+						label(class='col-lg-2 control-label') Vehicle Model
+						div(class='col-lg-10')
+							input(name='model', required, class='form-control', placeholder='Model')
+					div(class='form-group')
+						label(class='col-lg-2 control-label') Vehicle Year
+						div(class='col-lg-10')
+							input(type='number', name='year', required, class='form-control', placeholder='Vehicle Year')
+					div(class='form-group')
+						label(class='col-lg-2 control-label') Are you
+						div(class='col-lg-10')
+							input(name='category', required, class='form-control')
+					div(class='form-group')
+						label(class='col-lg-2 control-label') Postal code of your residence
+						div(class='col-lg-10')
+							input(name='postalCode', required, class='form-control', placeholder='Postal Code')
+					div(class='form-group')
+						label(class='col-lg-2 control-label') Approximate KM since last charge
+						div(class='col-lg-10')
+							input(type='number', name='approximateKm', required, class='form-control', placeholder='Approximate KM since last charge')
+					div(class='form-group')
+						label(class='col-lg-2 control-label') Charger Station #
+						div(class='col-lg-10')
+							input(type='number', name='chargerStation', required, class='form-control', placeholder='Charger Station #')
+					div(class='form-group')
+						label(class='col-lg-2 control-label') Estimated duration of stay
+						div(class='col-lg-10')
+							input(type='number', name='duration', required, class='form-control', placeholder='Estimated duration of stay')
+					div(class='form-group')
+						div(class='col-lg-10')
+							input(type='hidden', name='chargeDate', class='form-control', placeholder='Date')
+					div(class='form-group')
+						div(class='col-lg-10')
+							div(class='button-center')
+								input(type='submit', class='btn btn-primary button', value='Add Data')			

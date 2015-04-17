@@ -1,0 +1,104 @@
+body {
+	background: rgb(0,75,135);
+	background-image: url(/images/background_249.98.png);
+	background-position: top right;
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+/*======left elements====*/
+.welcome {
+	width: 55%;
+	float: left;
+}
+
+.welcome h1 {
+	font-size: 85px;
+	margin: 0;
+	text-align: center;
+}
+
+.welcome p {
+	font-size: 25px;
+}
+
+.login{
+	height: 400px;
+    width: 25%;
+    float: right;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.logo {
+    clear: both;
+}
+
+
+/*=======right elemenets====*/
+
+h2 {
+  font-size: 43px;
+  margin: 0;
+  font-weight: 500;	
+}
+
+.form-horizontal {
+	text-align: center;
+}
+
+.form-horizontal .form-control {
+	height: 35px;
+	width: 100%;
+	
+}
+
+button {
+	width: 100%;
+}
+
+
+/*========Database=========*/
+.container h1 {
+	padding:0;
+	margin: 5px;
+	font-size: 45px;
+}
+
+ul.right {
+	margin: 10;
+	text-align: left;
+}
+
+.left {
+	text-align: right;
+}
+
+.container{
+	width: 85%;
+	margin: 0 auto;
+}
+
+.form-group {
+	text-align: left;
+	padding: 3px;
+	font-size: 20px;
+}
+
+
+/*============BUTTON============*/
+.button{
+	background-color: rgb(100, 167, 11);
+	border: none;
+	padding: 20px 40px;
+	margin: 7px;
+	color: white;
+	font-size: 20px;
+}
+
+@media screen and (max-width: 360px) {
+	
+	.form-group {
+		font-size: 16px;
+	}
+}
